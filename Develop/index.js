@@ -2,7 +2,6 @@
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 const prompt = require("prompt-sync")();
-const genMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = ["What is your program called?", "What is your program description?", "How can users install your service?",
@@ -23,6 +22,7 @@ function init() {
         answers.push(answer);
     });
     writeToFile("README.md", answers);
+    console.log(generateMarkdown(answers));
 }
 
 // Function call to initialize app

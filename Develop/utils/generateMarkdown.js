@@ -3,8 +3,8 @@
 function renderLicenseBadge(license) {
   return (license === "MIT") ? 
     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" :
-  (license === "GPL") ?
-    "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)" :
+  (license === "Apache") ?
+    "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" :
     "";
 }
 
@@ -55,7 +55,6 @@ function renderLicenseSection(license, name) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log(renderLicenseBadge(data[6]));
   return `# ${data[0]}
   ${renderLicenseBadge(data[6])}
 
@@ -70,7 +69,7 @@ function generateMarkdown(data) {
   3. [Tests](#tests)
   4. [Contribution](#contribution)
   5. [License](#license)
-  6. [questions](#questions)
+  6. [Questions](#questions)
   
   ## Installation
   
