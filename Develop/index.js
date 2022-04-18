@@ -10,7 +10,7 @@ const questions = ["What is your program called?", "What is your program descrip
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+    fs.writeFileSync(fileName, data);
 }
 
 // TODO: Create a function to initialize app
@@ -21,8 +21,10 @@ function init() {
         console.log();
         answers.push(answer);
     });
-    writeToFile("README.md", answers);
-    console.log(generateMarkdown(answers));
+    console.log("Writing your README...");
+    const markdownText = generateMarkdown(answers);
+    writeToFile("README.md", markdownText);
+    console.log("Your README is done!");
 }
 
 // Function call to initialize app
