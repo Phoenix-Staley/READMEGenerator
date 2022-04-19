@@ -1,9 +1,9 @@
-# 
+# README Generator
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
 
-  
+  1
   
   ## Table of contents
   
@@ -16,23 +16,23 @@
   
   ## Installation
   
-  
+  2
   
   ## Usage
   
-  
+  3
   
   ## Tests
   
-  
+  4
   
   ## Contribution
   
-  
+  5
 
   ## License
 
-  Copyright (c) 2022 
+  Copyright (c) 2022 Phoenix Staley
 
       Permission is hereby granted, free of charge, to any person obtaining
       a copy of this software and associated documentation files (the
@@ -55,5 +55,5 @@
   
   ## Questions
   
-  If you have a question or want to report a bug, you can email the developers [here](mailto:).
-  This code was created by . To see more work by them, check out their [Github profile](https://github.com/).
+  If you have a question or want to report a bug, you can email the developers [here](mailto:6).
+  This code was created by Phoenix Staley. To see more work by them, check out their [Github profile](https://github.com/url-here).

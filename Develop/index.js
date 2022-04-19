@@ -1,10 +1,24 @@
-// TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const { title } = require("process");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+const simpleQuestions = [
+    {
+        type: "input",
+        message: "What is your program called?",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "What is your program description?",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "Developer name(s):",
+        name: "name"
+    }
+];
 const questions = [
     {
         type: "input",
@@ -58,25 +72,31 @@ const questions = [
         name: "githubUsername"
     }
 ];
-// const questions = ["What is your program called?", "What is your program description?", "How can users install your service?",
-//                     "How to use your service?", "How to run your programs tests?", "What are the contribution guidelines?",
-//                     "What license would you like? ('MIT', 'Apache', or blank)", "Your email:", "Developer name(s):", "Your Github username:"];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    console.log("Writing your README...");
     fs.writeFileSync(fileName, data);
+    console.log("Your README is done!");
 }
 
-// TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions)
-        .then((response) => {
-            console.log("Writing your README...");
-            const markdownText = generateMarkdown(response);
-            writeToFile("README.md", markdownText);
-            console.log("Your README is done!");
+    inquirer.prompt([{type: "list", message: "What kind of README would you like?", choices: ["Basic", "All included"], name: "type"}])
+        .then(response => {
+            if (response.type === "Basic") {
+                inquirer.prompt(simpleQuestions)
+                    .then(answers => {
+                        const markdownText = generateMarkdown(answers, true);
+                        writeToFile("README.md", markdownText);
+                });
+            } else {
+                inquirer.prompt(questions)
+                    .then(answers => {
+                        const markdownText = generateMarkdown(answers);
+                        writeToFile("README.md", markdownText);
+                });
+            }
         })
+    
 }
 
-// Function call to initialize app
 init();
