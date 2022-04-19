@@ -4,6 +4,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 const simpleQuestions = [
     {
+        // This determine's the READMEs title
         type: "input",
         message: "What is your program called?",
         name: "title"
@@ -14,6 +15,7 @@ const simpleQuestions = [
         name: "description"
     },
     {
+        // This will be put in the license section
         type: "input",
         message: "Developer name(s):",
         name: "name"
@@ -53,11 +55,13 @@ const questions = [
     {
         type: "list",
         message: "What license would you like?",
+        // These are the available licenses. If you add a new one, add a case for it in renderLicenseBadge and renderLicenseSection
         choices: ["MIT", "Apache", "None"],
         name: "license"
     },
     {
         type: "input",
+        // This will be put in a link for users to email the developer
         message: "What is your email?",
         name: "email"
     },
@@ -68,6 +72,7 @@ const questions = [
     },
     {
         type: "input",
+        // This will be put in a link to the developers Github profile
         message: "What is your Github username?",
         name: "githubUsername"
     }
@@ -96,7 +101,6 @@ function init() {
                 });
             }
         })
-    
 }
 
 init();

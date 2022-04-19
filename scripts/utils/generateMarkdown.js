@@ -1,3 +1,4 @@
+// This returns the badge at the top of the README given a license choice
 function renderLicenseBadge(license) {
   return (license === "MIT") ? 
     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" :
@@ -6,6 +7,7 @@ function renderLicenseBadge(license) {
     "";
 }
 
+// This returns the text for the license section
 function renderLicenseSection(license, name) {
   const year = new Date().getFullYear();
   return (license === "MIT") ?
@@ -45,7 +47,9 @@ function renderLicenseSection(license, name) {
       limitations under the License.` : "";
 }
 
+// This generates the text that will go in the README
 function generateMarkdown(data, isBasic) {
+  // Checks if the user picked a basic or detailed README
   return isBasic ? `# ${data.title}
   ${renderLicenseBadge("MIT")}
   
