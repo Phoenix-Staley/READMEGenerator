@@ -22,7 +22,7 @@
   After installing the program, open an integrated terminal in the scripts file (or open another terminal and navigate to the scripts file), and then type the line `node index.js`. After that, respond to the prompts about your program. Once you're all done, the README.md file in the scripts directory should be filled out with all the information about your program.
   The video below walks you through how to run the program once you have it installed.
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DcvbxDqOdDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  [![IMAGE_ALT](https://img.youtube.com/vi/DcvbxDqOdDE/0.jpg)](https://youtu.be/DcvbxDqOdDE)
   
   ## Contribution
   
