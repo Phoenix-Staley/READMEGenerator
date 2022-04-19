@@ -1,9 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return (license === "MIT") ? 
+  console.log(license);
+  return (license[0] === "MIT") ? 
     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" :
-  (license === "Apache") ?
+  (license[0] === "Apache") ?
     "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" :
     "";
 }
@@ -55,12 +56,12 @@ function renderLicenseSection(license, name) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data[0]}
-  ${renderLicenseBadge(data[6])}
+  return `# ${data.title}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
 
-  ${data[1]}
+  ${data.description}
   
   ## Table of contents
   
@@ -73,28 +74,28 @@ function generateMarkdown(data) {
   
   ## Installation
   
-  ${data[2]}
+  ${data.installation}
   
   ## Usage
   
-  ${data[3]}
+  ${data.usage}
   
   ## Tests
   
-  ${data[4]}
+  ${data.tests}
   
   ## Contribution
   
-  ${data[5]}
+  ${data.contribution}
 
   ## License
 
-  ${renderLicenseSection(data[6], data[8])}
+  ${renderLicenseSection(data.license, data.name)}
   
   ## Questions
   
-  If you have a question or want to report a bug, you can email the developers [here](mailto:${data[7]}).
-  This code was created by ${data[8]}. To see more work by them, check out their [Github profile](https://github.com/${data[9]}).`;
+  If you have a question or want to report a bug, you can email the developers [here](mailto:${data.email}).
+  This code was created by ${data.name}. To see more work by them, check out their [Github profile](https://github.com/${data.githubUsername}).`;
 }
 
 module.exports = generateMarkdown;
