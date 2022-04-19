@@ -55,5 +55,5 @@
   
   ## Questions
   
-  If you have a question or want to report a bug, you can email the developers [here](mailto:6).
-  This code was created by Phoenix Staley. To see more work by them, check out their [Github profile](https://github.com/url-here).
+  If you have a question or want to report a bug, you can email the developers [here](mailto:phoenixstaley_developer@outlook.com).
+  This code was created by Phoenix Staley. To see more work by them, check out their [Github profile](https://github.com/Phoenix-Staley).
