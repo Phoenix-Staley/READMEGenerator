@@ -1,10 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  console.log(license);
-  return (license[0] === "MIT") ? 
+  return (license === "MIT") ? 
     "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" :
-  (license[0] === "Apache") ?
+  (license === "Apache") ?
     "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)" :
     "";
 }

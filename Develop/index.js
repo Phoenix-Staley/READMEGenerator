@@ -37,7 +37,7 @@ const questions = [
         name: "contribution"
     },
     {
-        type: "checkbox",
+        type: "list",
         message: "What license would you like?",
         choices: ["MIT", "Apache", "None"],
         name: "license"
