@@ -3,32 +3,30 @@
 
   ## Description
 
-  1
+  This program solves the problem of wasting time by creating README.md files for every project. With this program, you can simply input answers to various questions about your service and it will use those inputs to create a README for your project. This program uses Node.js to run outside of a browser, and inquirer to get user input and use that input in the program.
   
   ## Table of contents
   
   1. [Installation](#installation)
   2. [Usage](#usage)
-  3. [Tests](#tests)
-  4. [Contribution](#contribution)
-  5. [License](#license)
-  6. [Questions](#questions)
+  3. [Contribution](#contribution)
+  4. [License](#license)
+  5. [Questions](#questions)
   
   ## Installation
   
-  2
+  To install and use this program, either clone the repository to your local machine, or download the .zip file and unzip that.
   
   ## Usage
   
-  3
-  
-  ## Tests
-  
-  4
+  After installing the program, open an integrated terminal in the scripts file (or open another terminal and navigate to the scripts file), and then type the line `node index.js`. After that, respond to the prompts about your program. Once you're all done, the README.md file in the scripts directory should be filled out with all the information about your program.
+  The video below walks you through how to run the program once you have it installed.
+
+  [![IMAGE_ALT](https://img.youtube.com/vi/DcvbxDqOdDE/0.jpg)](https://youtu.be/DcvbxDqOdDE)
   
   ## Contribution
   
-  5
+  If you want to contribute, please contact me! My developer email is in the Questions section.
 
   ## License
 
@@ -55,5 +53,5 @@
   
   ## Questions
   
-  If you have a question or want to report a bug, you can email the developers [here](mailto:phoenixstaley_developer@outlook.com).
+  If you have a question or want to report a bug, you can email the developers [here](mailto:PhoenixStaley_Developer@outlook.com).
   This code was created by Phoenix Staley. To see more work by them, check out their [Github profile](https://github.com/Phoenix-Staley).
