@@ -15,7 +15,7 @@
   
   ## Installation
   
-  To install and use this program, either clone the repository to your local machine, or download the .zip file and unzip that.
+  To install and use this program, either clone the repository to your local machine, or download the .zip file and unzip that. After doing so, install node.js at the [official website](https://nodejs.org/it/download/).
   
   ## Usage
   
